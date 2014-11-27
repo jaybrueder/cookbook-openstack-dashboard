@@ -48,8 +48,7 @@ SESSION_COOKIE_SECURE = <%= node["openstack"]["dashboard"]["session_cookie_secur
 # service API. For example, The identity service APIs have inconsistent
 # use of the decimal point, so valid options would be "2.0" or "3".
 OPENSTACK_API_VERSIONS = {
-    "identity": <%= node["openstack"]["dashboard"]["identity_api_version"] %>,
-    "volume": <%= node["openstack"]["dashboard"]["cinder_version"] %>
+    "identity": <%= node["openstack"]["dashboard"]["identity_api_version"] %>
 }
 
 # Set this to True if running on multi-domain model. When this is enabled, it
