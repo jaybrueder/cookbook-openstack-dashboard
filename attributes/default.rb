@@ -165,6 +165,8 @@ when 'v3.0'
   default['openstack']['dashboard']['identity_api_version'] = 3
 end
 
+default["openstack"]["dashboard"]["cinder_version"] = 2
+
 default['openstack']['dashboard']['keystone_default_domain'] = 'Default'
 default['openstack']['dashboard']['console_type'] = 'AUTO'
 
